@@ -1,6 +1,6 @@
-# RiderRaksha 🚴‍♂️
+# 🛡️ RiderRaksha Backend
 
-### AI-Powered Parametric Insurance for Gig Workers
+### AI-Powered Parametric Insurance Engine for Gig Workers
 
 **Guidewire DEVTrails 2026 — Hackathon Submission**
 
@@ -8,146 +8,132 @@
 
 ## 🚀 Overview
 
-RiderRaksha is a real-time, AI-driven parametric insurance platform designed for gig delivery workers.
-It automatically detects external disruptions such as weather, pollution, and civic restrictions, and compensates income loss instantly—without requiring a manual claim.
+The RiderRaksha backend is the **core intelligence engine** of the platform.
+It powers **real-time claim automation, fraud detection, and predictive analytics** for gig worker income protection.
 
-> **Core Idea:**
-> Replace traditional claim-based insurance with automated, data-triggered payouts.
-
----
-
-## ⚡ Key Features
-
-* ⚡ **Instant Auto Payouts** — No claim filing required
-* 🌦️ **Real-Time Trigger Engine** — Rain, AQI, Heat, Flood, Curfew
-* 🤖 **AI Fraud Detection** — Isolation Forest anomaly detection
-* 🧠 **Explainable AI** — Transparent risk scoring & reasoning
-* 📊 **Admin Dashboard** — Live analytics, alerts, and insights
-* 🔮 **Prediction Engine** — Forecasts claims, fraud, and risk zones
+> 💡 Unlike traditional insurance, RiderRaksha eliminates manual claims by using **data-triggered payouts**.
 
 ---
 
-## 📊 Product Preview
+## ⚡ Core Responsibilities
 
-### 👤 User Dashboard
-
-Shows worker earnings, policy coverage, and payout tracking
-![User Dashboard](./screenshots/user-dashboard.png)
-
----
-
-### 📄 Claims & Auto Payout System
-
-Demonstrates auto-triggered claims, fraud scoring, and payout processing
-![Claims](./screenshots/claims.png)
+* 🌦️ Detect real-world disruptions (weather, AQI, curfew)
+* ⚡ Auto-trigger claims without user input
+* 🤖 Run ML models for fraud detection
+* 📊 Provide admin analytics & insights
+* 🔮 Predict future claims and risk trends
 
 ---
 
-### 🧠 Admin Dashboard
+## 🧠 Key Features
 
-Central system view with analytics, alerts, and operational insights
-![Admin Dashboard](./screenshots/admin-dashboard.png)
-
----
-
-### 🚨 AI Insights & Risk Monitoring
-
-Highlights fraud spikes, alerts, and recommended actions
-![AI Insights](./screenshots/ai-insights.png)
+* ⚡ **Auto Claim Engine** — Event → Claim → Payout
+* 🌍 **Trigger Engine** — Weather, AQI, Heat, Flood, Curfew
+* 🤖 **Fraud Detection (ML)** — Isolation Forest anomaly detection
+* 🧠 **Explainable AI** — Risk reasons + confidence
+* 📊 **Admin Analytics API** — Real-time insights
+* 🔮 **Prediction API** — Forecast claims & fraud trends
 
 ---
 
-### 🔍 Fraud Detection & Claim Review
-
-Detailed claim-level analysis with ML explanation and risk factors
-![Fraud Review](./screenshots/fraud-review.png)
-
----
-
-## 🎥 Demo
-
-👉 [Add your demo video link here]
-
-**Demo includes:**
-
-* Real-time disruption → claim generation
-* Fraud detection using ML
-* AI insights and recommendations
-* Prediction-based risk analysis
-
----
-
-## 🧠 System Architecture
+## 🧩 System Architecture
 
 ```text
 Frontend (React)
    ↓
-Backend (Flask APIs)
+Flask Backend (APIs)
    ↓
-ML Layer (Fraud + Pricing + Prediction)
+ML Layer (Fraud + Prediction + Pricing)
    ↓
-Database + External APIs (Weather, AQI)
+Database + External APIs
 ```
 
 ---
 
-## 🤖 AI & Machine Learning
+## 🔌 API Modules
 
-| Model             | Purpose                                |
-| ----------------- | -------------------------------------- |
-| Isolation Forest  | Fraud detection (behavioral anomalies) |
-| XGBoost           | Dynamic premium calculation            |
-| K-Means           | Risk segmentation                      |
-| Prediction Engine | Claim & fraud forecasting              |
+### 📄 Claims API
 
-### Explainability Layer
+* Auto-generated claims
+* Claim history & filtering
+* Status tracking (approved / pending / blocked)
+
+---
+
+### 🛡️ Admin API
+
+* Analytics dashboard data
+* Fraud metrics
+* Loss ratio & risk insights
+* Alerts & monitoring data
+
+---
+
+### 🤖 ML API
+
+* Fraud score prediction
+* Risk explanation
+* Feature importance
+
+---
+
+### 🔮 Prediction API
+
+* Forecast future claims
+* Identify high-risk zones
+* Generate recommendations
+
+---
+
+## 🤖 Machine Learning
+
+| Model            | Purpose                             |
+| ---------------- | ----------------------------------- |
+| Isolation Forest | Fraud detection (anomaly detection) |
+| XGBoost          | Premium prediction                  |
+| K-Means          | Zone-based risk segmentation        |
+| Custom Engine    | Claim & fraud forecasting           |
+
+---
+
+## 🧠 Explainable AI Output
 
 Each claim includes:
 
-* Fraud score
-* Risk factors (account age, payout ratio, behavior)
-* AI-generated explanation
-* Recommended action
+* Fraud Score (0–1)
+* Risk Level (LOW / MEDIUM / HIGH)
+* Confidence Score
+* Risk Factors (e.g., payout ratio, behavior)
+* Recommended Action
 
 ---
 
-## 🔮 Prediction Engine
+## 🔮 Prediction Engine (Sample Output)
 
-The system forecasts future system behavior using historical and real-time data:
-
-* Predicted claim volume
-* Fraud risk trends
-* High-risk zones
-* Recommended operational actions
-
-**Example Output:**
-
-```text
-Predicted Claims: 20
-Fraud Risk: 46% (MEDIUM)
-Top Risk Zone: Zone-1
-Recommendation: Increase monitoring and manual review
+```json
+{
+  "predicted_claims": 20,
+  "predicted_fraud_score": 0.46,
+  "risk_level": "MEDIUM",
+  "top_risk_zone": "Zone-1",
+  "recommended_action": "Increase monitoring and manual review"
+}
 ```
 
 ---
 
-## 🔐 Fraud Detection Strategy
+## 🔐 Fraud Detection Logic
 
-* Behavioral pattern analysis
-* Device/network anomaly detection
-* Zone-based clustering
-* Real-time fraud scoring
-
-| Score Range | Action                |
-| ----------- | --------------------- |
-| < 0.3       | Auto-approve          |
-| 0.3 – 0.6   | Delayed verification  |
-| 0.6 – 0.8   | Manual review         |
-| > 0.8       | Block + investigation |
+| Score Range | Action              |
+| ----------- | ------------------- |
+| < 0.3       | Auto-approve        |
+| 0.3 – 0.6   | Monitor             |
+| 0.6 – 0.8   | Manual review       |
+| > 0.8       | Block & investigate |
 
 ---
 
-## 🌦️ Trigger System
+## 🌦️ Trigger Engine Rules
 
 | Event  | Threshold    |
 | ------ | ------------ |
@@ -159,15 +145,7 @@ Recommendation: Increase monitoring and manual review
 
 ---
 
-## 💰 Pricing Model
-
-| Tier     | Premium  | Coverage |
-| -------- | -------- | -------- |
-| Basic    | ₹29/week | ₹1,000   |
-| Standard | ₹59/week | ₹2,500   |
-| Pro      | ₹99/week | ₹5,000   |
-
-**Payout Formula:**
+## 💰 Payout Logic
 
 ```text
 Payout = Hours Lost × Hourly Rate × 80%
@@ -175,42 +153,14 @@ Payout = Hours Lost × Hourly Rate × 80%
 
 ---
 
-## 📊 Actuarial Insight
-
-* Avg disruption days/year → 35
-* Avg payout/day → ₹381
-* Estimated payout/year → ₹5,334
-
-Dynamic pricing and risk segmentation help maintain sustainable loss ratios.
-
----
-
-## 💼 Business Model
-
-* Platform fee: **12–15% of premiums**
-
-Example:
-
-```text
-10,000 users → ₹3 Cr premium
-~13% margin → ₹40 lakh/year
-```
-
-Future expansion:
-
-* B2B integration with delivery platforms
-* White-label insurance solutions
-
----
-
 ## 🛠️ Tech Stack
 
-* **Frontend:** React, Tailwind CSS, Recharts
-* **Backend:** Flask, SQLAlchemy
+* **Backend Framework:** Flask
+* **ORM:** SQLAlchemy
 * **Database:** MySQL / SQLite
-* **ML:** scikit-learn, XGBoost
-* **Auth:** JWT
-* **APIs:** OpenWeatherMap, AQI APIs
+* **ML Libraries:** scikit-learn, XGBoost
+* **Authentication:** JWT
+* **External APIs:** OpenWeatherMap, AQI APIs
 * **Payments:** Razorpay (sandbox)
 
 ---
@@ -219,16 +169,18 @@ Future expansion:
 
 ```text
 riderraksha-backend/
-riderraksha-app/
-screenshots/
-README.md
+│── app/
+│   │── routes/        # API endpoints
+│   │── services/      # Business logic
+│   │── ml/            # ML models & logic
+│   │── models/        # Database models
+│── run.py
+│── requirements.txt
 ```
 
 ---
 
-## ⚙️ Setup Instructions
-
-### Backend
+## ⚙️ Run Backend Locally
 
 ```bash
 cd riderraksha-backend
@@ -236,26 +188,32 @@ pip install -r requirements.txt
 python run.py
 ```
 
-### Frontend
-
-```bash
-cd riderraksha-app
-npm install
-npm run dev
-```
+👉 Runs at:
+**http://localhost:5000**
 
 ---
 
-## 📌 Future Scope
+## 📌 Key Innovation
 
-* Real-time streaming (WebSockets)
-* Advanced predictive models
+* Fully automated **claimless insurance system**
+* Real-time **event-driven payouts**
+* Transparent **AI-driven fraud detection**
+* Predictive **risk intelligence for insurers**
+
+---
+
+## 🚀 Future Scope
+
+* WebSocket real-time streaming
+* Advanced deep learning fraud models
 * Cloud deployment (AWS/GCP)
-* Integration with delivery platforms
+* Integration with Swiggy/Zomato APIs
 
 ---
 
 ## 👥 Team
+
+**Team Elites**
 
 * Jathin Sekhar Nerella — Full Stack
 * Naga Venkata Balaji — Backend
@@ -263,3 +221,5 @@ npm run dev
 * Dhana Laxmi — UI/UX
 
 KL University — Guidewire DEVTrails 2026
+
+---

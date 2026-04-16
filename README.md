@@ -9,6 +9,7 @@
 ## 🎥 Demo & Pitch Deck
 
 👉 **Pitch Deck:** https://docs.google.com/presentation/d/1b4akQt3uw2VLavxYxIcnHF-1O4PuuzJx/edit?usp=drive_link&ouid=117809812464522237292&rtpof=true&sd=true
+
 👉 **Demo Video:** https://your-video-link
 
 ---

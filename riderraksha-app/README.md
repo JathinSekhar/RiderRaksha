@@ -25,35 +25,6 @@ This frontend provides an intuitive and responsive interface for users and admin
 
 ---
 
-## 🖥️ Product Screens
-
-### 👤 User Dashboard
-
-Displays earnings, active policy, and recent claims
-![User Dashboard](./screenshots/user-dashboard.png)
-
-### 📄 Claims Page
-
-Track claim status, payouts, and fraud scores
-![Claims Page](./screenshots/claims.png)
-
-### 🛡️ Admin Dashboard
-
-Real-time analytics, alerts, and fraud monitoring
-![Admin Dashboard](./screenshots/admin-dashboard.png)
-
-### 🤖 AI Insights Panel
-
-Fraud detection insights and recommendations
-![AI Insights](./screenshots/ai-insights.png)
-
-### 🔍 Fraud Review Panel
-
-Detailed claim inspection with ML explanation
-![Fraud Review](./screenshots/fraud-review.png)
-
----
-
 ## 🛠️ Tech Stack
 
 * ⚛️ React 18

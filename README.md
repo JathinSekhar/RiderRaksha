@@ -10,7 +10,7 @@
 
 👉 **Pitch Deck:** https://docs.google.com/presentation/d/1b4akQt3uw2VLavxYxIcnHF-1O4PuuzJx/edit?usp=drive_link&ouid=117809812464522237292&rtpof=true&sd=true
 
-👉 **Demo Video:** https://your-video-link
+👉 **Demo Video:** (https://drive.google.com/file/d/14qReD-Hb7a_MI8OVeMQGIym7-PS2G4ia/view?usp=sharing)
 
 ---
 

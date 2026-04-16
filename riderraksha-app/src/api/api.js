@@ -41,4 +41,15 @@ export const api = {
 
   myClaims: ()   => req('/api/claims/my'),
   getClaim: (id) => req(`/api/claims/${id}`),
+
+  adminAnalytics: () => req('/api/admin/analytics'),
+  
+  getAllClaims: async () => {
+    // Try admin endpoint first, fallback to user claims
+    const res = await req('/api/claims/all');
+    if (res.ok) return res;
+    return req('/api/claims/my');
+  },
+  
+  getAlerts: () => req('/api/admin/alerts'),
 };

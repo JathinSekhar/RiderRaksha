@@ -12,8 +12,7 @@
 https://docs.google.com/presentation/d/1b4akQt3uw2VLavxYxlcnHF-1O4PuuzJx/edit?usp=drive_link
 
 👉 **Demo Video**  
-https://drive.google.com/file/d/14qReD-Hb7a_MI8OVeMQGlym7-PS2G4ia/view?usp=sharing
-
+https://drive.google.com/file/d/14qReD-Hb7a_MI8OVeMQGIym7-PS2G4ia/view?usp=sharing
 ---
 
 ## 🚀 Overview

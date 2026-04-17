@@ -9,10 +9,10 @@
 ## 🎬 Demo & Pitch Deck
 
 👉 **Pitch Deck**  
-[View Presentation](https://docs.google.com/presentation/d/1b4akQt3uw2VLavxYxlcnHF-1O4PuuzJx/edit?usp=drive_link)
+https://docs.google.com/presentation/d/1b4akQt3uw2VLavxYxlcnHF-1O4PuuzJx/edit?usp=drive_link
 
 👉 **Demo Video**  
-[Watch Demo](https://drive.google.com/file/d/14qReD-Hb7a_MI8OVeMQGlym7-PS2G4ia/view?usp=sharing)
+https://drive.google.com/file/d/14qReD-Hb7a_MI8OVeMQGlym7-PS2G4ia/view?usp=sharing
 
 ---
 

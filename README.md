@@ -209,6 +209,20 @@ Future Expansion:
 * React 18, Vite
 * Tailwind CSS
 
+## 🔐 Admin Access
+
+To access the admin dashboard:
+
+1. Open database  
+2. Update user role:
+
+UPDATE users SET role = 'admin' WHERE email = 'your-email';
+
+3. Restart backend  
+4. Login again  
+
+> Admin access is role-based for demo purposes.
+
 ### Backend
 
 * Flask, SQLAlchemy
